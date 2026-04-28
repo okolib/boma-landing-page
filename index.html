@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boma Okoli — Personal Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 </head>
 <body>
     <header>
@@ -19,77 +19,23 @@
 
     <main>
         <section class="gallery">
-            <div class="photo">
-                <div class="photo-media">
-                    <img src="images/eiffel_tower.jpg" alt="eiffel_tower">
-                </div>
-                <p>A picture of the Eiffel Tower on my trip to France</p>
-            </div>
-            <div class="photo">
-                <div class="photo-media">
-                    <img src="images/louvre_pyramid.jpg" alt="louvre_pyramid">
-                </div>
-                <p>A picture of the louvre_pyramid on my trip to France</p>
-            </div>
-            <div class="photo">
-                <div class="photo-media">
-                    <img src="images/poodle_dogs.jpg" alt="poodle_dogs">
-                </div>
-                <p>A picture of poodle dogs</p>
-            </div>
-            <div class="photo">
-                <div class="photo-media">
-                    <img src="images/work_photo.jpg" alt="work_photo">
-                </div>
-                <p>A photo at work</p>
-            </div>
+            <img class="gallery__thumb" src="images/eiffel_tower.jpg" alt="Eiffel Tower">
+            <img class="gallery__thumb" src="images/louvre_pyramid.jpg" alt="Louvre Pyramid">
+            <img class="gallery__thumb" src="images/poodle_dogs.jpg" alt="Poodle Dogs">
+            <img class="gallery__thumb" src="images/work_photo.jpg" alt="Work Photo">
         </section>
     </main>
+
+    <!-- Lightbox overlay -->
+    <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <img class="lightbox__img" src="" alt="">
+        <div class="lightbox__caption"></div>
+    </div>
 
     <footer>
         <p>Deployed to AWS S3 — Cloud Web App Engineering, 2026</p>
     </footer>
-=======
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CS 506 · Week 3 · Lightbox Starter</title>
-  <link rel="stylesheet" href="css/lightbox.css">
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 2rem 1rem;
-      background: #f5f1e8;
-      color: #1a2b4a;
-    }
-    h1 { text-align: center; margin: 0 0 0.5rem; }
-    .subtitle {
-      text-align: center;
-      color: #5a6b7d;
-      font-style: italic;
-      margin-bottom: 2rem;
-    }
-  </style>
-</head>
-<body>
 
-  <h1>Lightbox Starter</h1>
-  <p class="subtitle">Click any thumbnail below. Escape or click the backdrop to close.</p>
-
-  <!-- Gallery markup — the thumbnails the lightbox code hooks into -->
-  <div class="gallery">
-    <img class="gallery__thumb" src="images/sample-1.svg" alt="Sample 1">
-    <img class="gallery__thumb" src="images/sample-2.svg" alt="Sample 2">
-    <img class="gallery__thumb" src="images/sample-3.svg" alt="Sample 3">
-  </div>
-
-  <!-- Lightbox container — hidden until opened -->
-  <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
-    <img class="lightbox__img" src="" alt="">
-    <div class="lightbox__caption"></div>
-  </div>
-
-  <script src="js/lightbox.js"></script>
->>>>>>> course/main
+    <script src="js/lightbox.js"></script>
 </body>
 </html>

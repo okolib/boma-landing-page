@@ -13,9 +13,10 @@ const state = {
   isOpen: false,
   index: 0,
   images: [
-    { src: 'images/sample-1.svg', caption: 'Sample image one — replace with your own' },
-    { src: 'images/sample-2.svg', caption: 'Sample image two — a second photo' },
-    { src: 'images/sample-3.svg', caption: 'Sample image three — a third' },
+    { src: 'images/eiffel_tower.jpg', caption: 'A picture of the Eiffel Tower on my trip to France' },
+    { src: 'images/louvre_pyramid.jpg', caption: 'A picture of the Louvre Pyramid on my trip to France' },
+    { src: 'images/poodle_dogs.jpg', caption: 'A picture of poodle dogs' },
+    { src: 'images/work_photo.jpg', caption: 'A photo at work' },
   ],
 };
 
